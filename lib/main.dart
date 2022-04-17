@@ -377,10 +377,12 @@ class CustomCard extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
-                  data.value['name'],
-                  style: style.headlineMedium!.copyWith(
-                    color: Colors.yellow,
+                FittedBox(
+                  child: Text(
+                    data.value['name'],
+                    style: style.headlineMedium!.copyWith(
+                      color: Colors.yellow,
+                    ),
                   ),
                 ),
                 Row(
